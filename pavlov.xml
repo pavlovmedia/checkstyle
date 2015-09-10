@@ -15,8 +15,11 @@
   </module>
   -->
   <property name="severity" value="warning"/>
+
   <module name="TreeWalker">
     <property name="tabWidth" value="4"/>
+    <module name="SuppressWarningsHolder" />
+
     <module name="JavadocMethod">
       <property name="scope" value="package"/>
       <property name="excludeScope" value="private"/>
@@ -109,4 +112,5 @@
     <property name="message" value="Line has trailing spaces."/>
     <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
   </module>
+  <module name="SuppressWarningsFilter" />
 </module>
