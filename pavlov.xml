@@ -22,8 +22,11 @@
 
     <module name="JavadocMethod">
       <property name="scope" value="package"/>
-      <property name="excludeScope" value="private"/>
+      <property name="excludeScope" value="protected"/>
       <property name="suppressLoadErrors" value="true"/>
+      <property name="allowMissingReturnTag" value="true"/>
+      <property name="allowMissingThrowsTags" value="true"/>
+      <property name="allowMissingParamTags" value="true"/>
     </module>
     <module name="JavadocType">
       <property name="scope" value="package"/>
