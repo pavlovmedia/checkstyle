@@ -15,6 +15,7 @@
   </module>
   -->
   <property name="severity" value="warning"/>
+  <property name="fileExtensions" value="java, groovy, dto" />
 
   <module name="TreeWalker">
     <property name="tabWidth" value="4"/>
@@ -45,20 +46,19 @@
     <module name="MethodName"/>
     <module name="PackageName"/>
     <module name="ParameterName"/>
+    <module name="MissingOverride" />
     <module name="TypeName"/>
     <module name="AvoidStarImport">
       <property name="allowStaticMemberImports" value="true"/>
     </module>
     <module name="IllegalImport"/>
-    <!-- Shawn: Comment this out until we get better logic for dtos
     <module name="RedundantImport"/>
-    -->
     <module name="UnusedImports"/>
     <module name="MethodLength"/>
     <module name="ParameterNumber"/>
     <module name="EmptyForIteratorPad"/>
     <module name="GenericWhitespace"/>
-    <module name="MethodParamPad"/>
+    <module name="MethodParamPad" />
     <module name="NoWhitespaceAfter">
       <property name="tokens" value="BNOT,DEC,DOT,INC,LNOT,UNARY_MINUS,UNARY_PLUS"/>
     </module>
@@ -98,6 +98,19 @@
       <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
     </module>
     <module name="UpperEll"/>
+    <!-- might be cool when we have time
+    <module name="FinalLocalVariable"/>
+    -->
+    <module name="SingleSpaceSeparator"/>
+    <module name="EqualsAvoidNull" />
+    <module name="ExplicitInitialization"/>
+    <module name="IllegalCatch"/>
+    <module name="NestedIfDepth">
+        <property name="max" value="3"/>
+    </module>
+    <module name="ParameterAssignment"/>
+    <module name="StringLiteralEquality"/>
+    <module name="UnnecessaryParentheses"/>
   </module>
   <module name="NewlineAtEndOfFile">
     <property name="severity" value="ignore"/>
@@ -116,4 +129,5 @@
     <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
   </module>
   <module name="SuppressWarningsFilter" />
+
 </module>
